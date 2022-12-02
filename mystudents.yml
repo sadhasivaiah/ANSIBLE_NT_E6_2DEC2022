@@ -1,0 +1,25 @@
+--- 
+- hosts: all
+  become: yes
+  tasks: 
+  - name: sadasiva
+    phone: 9908225806
+    ROLL NO: 315
+    address:
+      streetNO: 2
+      doorNO: 315
+      PINCODE: 518217
+  - name: maldanna
+    phone: 9642029792
+    ROLL NO: 316
+    address:
+      streetNO: 3
+      doorNO: 295
+      PINCODE: 518217
+  - name: chaitanya
+    phone: 9392402719
+    ROLL NO: 317
+    address:
+      streetNO: 4
+      doorNO: 297
+      PINCODE: 518217      
