@@ -17,6 +17,6 @@
   - name: copy dynamicfiles into nodes 
     template: 
         src: myindex.j2
-        dest: /home/ubuntu/html/index.html/
+        dest: /var/www/html/index.html
 
         
