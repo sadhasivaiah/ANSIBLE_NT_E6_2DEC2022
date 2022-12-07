@@ -22,5 +22,5 @@
   - name: download files into nodes  
     get_url:
      url: https://get.jenkins.io/war-stable/2.375.1/jenkins.war
-     dest: /home/ubuntu/
+     dest: /home/ubuntu/jenkins.war
     force_basic_auth: yes   
