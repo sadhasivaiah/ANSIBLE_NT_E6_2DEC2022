@@ -7,3 +7,8 @@
     copy:
         src: mytestfile
         dest: /home/ubuntu/staticfile
+  - name: install webserver on nodes
+    apt:
+      name: apache2
+      state: present
+      
