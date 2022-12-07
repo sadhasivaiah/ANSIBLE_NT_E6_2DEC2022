@@ -3,12 +3,20 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
+
   - name: copy static files into nodes
     copy:
         src: mytestfile
         dest: /home/ubuntu/staticfile
+
   - name: install webserver on nodes
     apt:
       name: apache2
       state: present
-      
+
+  - name: copy dynamicfiles into nodes 
+    template: 
+        src: myindex.j2
+        dest: /home/ubuntu/html/index.html/
+
+        
